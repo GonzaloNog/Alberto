@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public SpriteRenderer ren;
+    public Vector3 trans;
+    public Vector3 pos;
     void Start()
     {
-        Debug.Log("El juego arranco");
+        ren.color = Color.red;
+        this.transform.localScale = trans;
+        this.transform.position = pos;
     }
 
-    // Update is called once per frame
     void Update()
     {
         Debug.Log("loop");
